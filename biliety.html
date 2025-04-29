@@ -54,6 +54,7 @@
         <button class="button" onclick="showQuestions('physics')">Билеты по физике</button>
          <button class="button button-answers" onclick="showQuestions('physicsAnswers')">Ответы по физике</button>
         <button class="button" onclick="showQuestions('informatics')">Билеты по информатике</button>
+        <button class="button button-answers" onclick="showQuestions('informaticsAnswers')">Ответы по информатике</button>
     </div>
 
     <div id="questions" class="questions" style="display:none;"></div>
@@ -88,6 +89,7 @@
             } 
                else if (subject === 'physicsAnswers') {
     questionsContainer.innerHTML = `
+       <h2>Ответы по физике</h2>
         <h2>1. Три закона Ньютона</h2>
         <ul>
             <li><strong>Первый закон (закон инерции):</strong> Тело остается в состоянии покоя или равномерного прямолинейного движения, если на него не действуют внешние силы.</li>
@@ -245,5 +247,24 @@
 <li> Введение в язык программирования Python</li>
                     </ol>
                 `;
-} questionsContainer.style.display = 'block'; } </script> </body> </html>
+}
+                else if (subject === 'informaticsAnswers') {
+                questionsContainer.innerHTML = `
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                `;}
+                
+                
+                
+                </script> </body> </html>
 
