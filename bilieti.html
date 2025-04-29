@@ -1,0 +1,110 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Билеты</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        h1 {
+            text-align: center;
+        }
+        .button-container {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .button {
+            padding: 10px 20px;
+            margin: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .button:hover {
+            background-color: #45a049;
+        }
+        .questions {
+            padding: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #fff;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Выбор билета</h1>
+    <div class="button-container">
+        <button class="button" onclick="showQuestions('physics')">Билет по физике</button>
+        <button class="button" onclick="showQuestions('informatics')">Билет по информатике</button>
+    </div>
+
+    <div id="questions" class="questions" style="display:none;"></div>
+
+    <script>
+        function showQuestions(subject) {
+            let questionsContainer = document.getElementById('questions');
+            if (subject === 'physics') {
+                questionsContainer.innerHTML = `
+                    <h2>Билет по физике</h2>
+                    <p>Вопросы к дифференцированному зачету по дисциплине ОУП.10 Физика<br>
+                    Преподаватель: Хомяков А.В.</p>
+                    <ul>
+                        <li>Три законы Ньютона</li>
+                        <li>Механическое движение. Относительность движения.</li>
+                        <li>Энергия. Импульс.</li>
+                        <li>Вещество. Материя. Поле.</li>
+                        <li>Термодинамическое равновесие</li>
+                        <li>Законы термодинамики</li>
+                        <li>Закон Кулона</li>
+                        <li>Заряд</li>
+                        <li>Закон Ома</li>
+                        <li>Система отсчета. Теория относительности Галлилея.</li>
+                        <li>Теория относительности Эйнштейна</li>
+                        <li>Ускорение свободного падения, вес тела</li>
+                        <li>Напряженность конденсатора</li>
+                        <li>Шкала электромагнитных волн</li>
+                        <li>Видимый спектр электромагнитных волн. Цвет</li>
+                    </ul>
+                    <p><strong>Знать определения и единицы измерения:</strong> напряжение, сопротивление, скорость, ускорение, вес тела, энергия, работа, мощность, время, расстояние, заряд, импульс, ускорение свободного падения, сила, напряженность.</p>
+                `;
+            } else if (subject === 'informatics') {
+                questionsContainer.innerHTML = `
+                    <h2>Билет по информатике</h2>
+                    <p>Перечень вопросов для подготовки к экзамену по учебному предмету ОУП.05 Информатика.</p>
+                    <ul>
+                        <li>Требования к технике безопасности. Санитарно-гигиенические требования при работе с ПК.</li>
+                        <li>Понятие информации. Свойства информации.</li>
+                        <li>Понятие и виды информационных процессов.</li>
+                        <li>Сжатие данных. Использование программ-архиваторов.</li>
+                        <li>Измерения и дискретизация. Универсальность дискретного представления информации. Единицы измерения информации.</li>
+                        <li>Дискретное представление текстовой информации.</li>
+                        <li>Дискретное представление звуковых данных.</li>
+                                                <li>Дискретное представление звуковых данных.</li>
+                        <li>Дискретное представление графической информации.</li>
+                        <li>Алгоритм: понятие, виды, свойства. Структуры алгоритмов.</li>
+                        <li>Программирование: понятие, языки программирования. Стадии разработки программного обеспечения.</li>
+                        <li>Примеры программных продуктов и их назначение.</li>
+                        <li>Мультимедиа: понятие, виды, использование в учебе и развлекательных целях. Программы для работы с мультимедиа.</li>
+                        <li>Этика и законность в информационном обществе.</li>
+                    </ul>
+                    <p><strong>Знать определения и единицы измерения:</strong> алгоритм, программа, информация, данные, компьютерные сети, мультимедиа, базовые языки программирования (например, Python, Java, C++).</p>
+                `;
+            }
+            questionsContainer.style.display = 'block';
+        }
+    </script>
+
+</body>
+</html>
+
