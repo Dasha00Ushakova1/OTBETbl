@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Стихотворения</title>
     <style>
-        body {
+       body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 20px;
@@ -15,15 +15,36 @@
         }
         h1 {
             text-align: center;
+            color: black; /* Цвет заголовка */
+            margin-bottom: 40px;
         }
         .poem {
             margin-bottom: 30px;
-            border-left: 4px solid #4CAF50;
-            padding-left: 10px;
+            border-left: 4px solid #00616e;
+            padding-left: 15px;
+            padding-right: 15px;
             font-style: italic;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 20px;
         }
         .author {
             font-weight: bold;
+            font-size: 1.2em;
+            margin-bottom: 10px;
+            display: block; /* Отделяет автора от текста стихотворения */
+        }
+        @media (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+            h1 {
+                font-size: 1.8em;
+            }
+            .poem {
+                padding: 15px;
+            }
         }
     </style>
 </head>
