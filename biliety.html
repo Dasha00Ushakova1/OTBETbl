@@ -33,6 +33,12 @@
         .button:hover {
             background-color: #012d33;
         }
+        .button-answers {
+            background-color: #73000a; /* Новый цвет для кнопки */
+        }
+        .button-answers:hover {
+            background-color: #4a0107; /* Цвет при наведении */
+        }
         .questions {
             padding: 15px;
             border: 1px solid #ccc;
@@ -46,7 +52,7 @@
     <h1>Выбор предмета</h1>
     <div class="button-container">
         <button class="button" onclick="showQuestions('physics')">Билеты по физике</button>
-         <button class="button" onclick="showQuestions('physicsAnswers')">Ответы по физике</button>
+         <button class="button button-answers" onclick="showQuestions('physicsAnswers')">Ответы по физике</button>
         <button class="button" onclick="showQuestions('informatics')">Билеты по информатике</button>
     </div>
 
