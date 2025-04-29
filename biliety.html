@@ -49,14 +49,13 @@
 </head>
 <body>
 
-   <h1>Выбор предмета</h1>
+    <h1>Выбор предмета</h1>
     <div class="button-container">
         <button class="button" onclick="showQuestions('physics')">Билеты по физике</button>
-        <button class="button button-answers" onclick="showQuestions('physicsAnswers')">Ответы по физике</button>
+         <button class="button button-answers" onclick="showQuestions('physicsAnswers')">Ответы по физике</button>
         <button class="button" onclick="showQuestions('informatics')">Билеты по информатике</button>
-        <button class="button button-answers" onclick="showQuestions('informaticsAnswers')">Ответы по информатике</button>
     </div>
-    
+
     <div id="questions" class="questions" style="display:none;"></div>
 
     <script>
@@ -87,9 +86,8 @@
                     <p><strong>Знать определения и единицы измерения:</strong> напряжение, сопротивление, скорость, ускорение, вес тела, энергия, работа, мощность, время, расстояние, заряд, импульс, ускорение свободного падения, сила, напряженность.</p>
                 `;
             } 
-                if (subject === 'physicsAnswers') {
+               else if (subject === 'physicsAnswers') {
     questionsContainer.innerHTML = `
-       <h2>Ответы по физике</h2>
         <h2>1. Три закона Ньютона</h2>
         <ul>
             <li><strong>Первый закон (закон инерции):</strong> Тело остается в состоянии покоя или равномерного прямолинейного движения, если на него не действуют внешние силы.</li>
@@ -195,7 +193,7 @@
     `;
 }
             
-             if (subject === 'informatics') {
+            else if (subject === 'informatics') {
                 questionsContainer.innerHTML = `
                     <h2>Билеты по информатике</h2>
                     <p>Перечень вопросов для подготовки к экзамену по учебному предмету ОУП.05 Информатика.</p>
@@ -247,16 +245,9 @@
 <li> Введение в язык программирования Python</li>
                     </ol>
                 `;
-}
-                else if (subject === 'informaticsAnswers') {
-                questionsContainer.innerHTML = `
-                
-                
+} questionsContainer.style.display = 'block'; } 
 
-    `;
-}
-
-  </script> 
-</body>
+        
+    </script> 
+</body> 
 </html>
-
