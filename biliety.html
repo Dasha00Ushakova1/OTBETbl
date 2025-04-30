@@ -55,6 +55,7 @@
          <button class="button button-answers" onclick="showQuestions('physicsAnswers')">Ответы по физике</button>
         <button class="button" onclick="showQuestions('informatics')">Билеты по информатике</button>
           <button class="button button-answers" onclick="showQuestions('informaticsAnswers')">Ответы по информатике</button>
+            <button class="button" onclick="showQuestions('english')"> Слова по английскому </button>
     </div>
 
     <div id="questions" class="questions" style="display:none;"></div>
@@ -589,8 +590,40 @@
         <p>Python — это высокоуровневый язык программирования, известный своей простотой и читаемостью. Он широко используется в веб-разработке, анализе данных, искусственном интеллекте и автоматизации задач. Python поддерживает множество библиотек и фреймворков, что делает его универсальным инструментом для разработчиков.</p>
                 `
                     ;}
-            
-            
+
+     else if (subject === 'english') {
+                questionsContainer.innerHTML = ` thin-skinny - худой
+lamppost - фонарь
+path - путь
+straight - прямой
+education - образование
+disgusting-nasty - отвратительный
+owner - собственник
+cozy - уютный
+to leave for - покидать
+careful - осторожный
+outside - снаружи
+reserved - сдержанный
+disadvantage - недостаток
+to miss - скучать
+class-lesson - урок
+gates - ворота
+dark - тёмный
+slim-slender - тощий
+responsible - ответственный
+fair - светлый
+curly - кудрявый
+canteen - столовая
+to learn - учиться
+bench - скамейка
+traffic jam - пробка
+to rent - арендовать
+reason - причина
+it takes - это занимает
+people - люди`;}
+
+
+
             questionsContainer.style.display = 'block'; } 
     </script> 
 </body> 
