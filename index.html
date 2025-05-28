@@ -1,9 +1,14 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="b2cf43718741e19ccedffbbf65aa1b59.jpg" sizes="32x32" type="image/x-icon">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+        rel="icon"
+        href="b2cf43718741e19ccedffbbf65aa1b59.jpg"
+        sizes="32x32"
+        type="image/x-icon"
+    />
     <title>Главная страница</title>
     <style>
         body {
@@ -19,13 +24,16 @@
             color: #333;
             text-align: center;
         }
+
         h1 {
             margin-bottom: 20px;
             font-size: 2.5em;
-            color: #000000; /* Зеленый цвет заголовка */
+            color: #004d59; /* Цвет заголовка */
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
         }
+
         .button {
-            background-color: #00616e; /* Зеленый */
+            background-color: #00616e; /* Цвет кнопки */
             color: white;
             padding: 15px 32px;
             text-align: center;
@@ -34,14 +42,18 @@
             font-size: 16px;
             margin: 10px;
             border: none;
-            border-radius: 4px;
+            border-radius: 8px;
             cursor: pointer;
-            transition: background-color 0.3s, transform 0.3s;
+            transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0 4px 10px rgba(0, 97, 110, 0.3);
         }
+
         .button:hover {
-            background-color: #012d33; /* Более темный зеленый */
+            background-color: #012d33; /* Темный цвет при наведении */
             transform: scale(1.05); /* Увеличение кнопки при наведении */
+            box-shadow: 0 6px 15px rgba(0, 97, 110, 0.5);
         }
+
         .container {
             background-color: white;
             border-radius: 10px;
@@ -50,10 +62,23 @@
             width: 80%;
             max-width: 600px;
         }
+
         footer {
             margin-top: 20px;
             font-size: 0.9em;
             color: #777;
+        }
+
+        /* Адаптивные стили */
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 2em; /* Уменьшение размера заголовка на мобильных */
+            }
+
+            .button {
+                padding: 12px 20px; /* Уменьшение отступов на мобильных */
+                font-size: 14px; /* Уменьшение размера текста на мобильных */
+            }
         }
     </style>
 </head>
