@@ -25,60 +25,60 @@
       text-shadow: 1px 1px 2px #ccc;
     }
 
-    .button-container {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 15px 25px;
-      width: 100%;
-      max-width: 700px;
-      margin-bottom: 30px;
-    }
+    ..button-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 15px 25px;
+            width: 100%;
+            max-width: 700px;
+            margin-bottom: 30px;
+        }
 
-    button.button {
-      padding: 14px 25px;
-      border: none;
-      border-radius: 8px;
-      background-color: #00616e;
-      color: white;
-      cursor: pointer;
-      font-size: 16px;
-      font-weight: 600;
-      box-shadow: 0 4px 8px rgba(0, 97, 110, 0.3);
-      transition: background-color 0.3s ease, box-shadow 0.3s ease,
-        transform 0.15s ease;
-      user-select: none;
-    }
+        button.button {
+            padding: 14px 25px;
+            border: none;
+            border-radius: 8px;
+            background-color: #00616e;
+            color: white;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: 600;
+            box-shadow: 0 4px 8px rgba(0, 97, 110, 0.3);
+            transition: background-color 0.3s ease, box-shadow 0.3s ease,
+                transform 0.15s ease;
+            user-select: none;
+        }
 
-    button.button:hover,
-    button.button:focus {
-      background-color: #012d33;
-      box-shadow: 0 6px 12px rgba(1, 45, 51, 0.6);
-      outline: none;
-      transform: translateY(-2px);
-    }
+        button.button:hover,
+        button.button:focus {
+            background-color: #012d33;
+            box-shadow: 0 6px 12px rgba(1, 45, 51, 0.6);
+            outline: none;
+            transform: translateY(-2px);
+        }
 
-    button.button:active {
-      transform: translateY(0);
-      box-shadow: 0 3px 6px rgba(1, 45, 51, 0.4);
-    }
+        button.button:active {
+            transform: translateY(0);
+            box-shadow: 0 3px 6px rgba(1, 45, 51, 0.4);
+        }
 
-    button.button-answers {
-      background-color: #73000a;
-      box-shadow: 0 4px 8px rgba(115, 0, 10, 0.4);
-    }
+        button.button-answers {
+            background-color: #73000a;
+            box-shadow: 0 4px 8px rgba(115, 0, 10, 0.4);
+        }
 
-    button.button-answers:hover,
-    button.button-answers:focus {
-      background-color: #4a0107;
-      box-shadow: 0 6px 12px rgba(74, 1, 7, 0.7);
-      outline: none;
-      transform: translateY(-2px);
-    }
+        button.button-answers:hover,
+        button.button-answers:focus {
+            background-color: #4a0107;
+            box-shadow: 0 6px 12px rgba(74, 1, 7, 0.7);
+            outline: none;
+            transform: translateY(-2px);
+        }
 
-    button.button-answers:active {
-      transform: translateY(0);
-      box-shadow: 0 3px 6px rgba(74, 1, 7, 0.5);
-    }
+        button.button-answers:active {
+            transform: translateY(0);
+            box-shadow: 0 3px 6px rgba(74, 1, 7, 0.5);
+        }
 
     .questions {
       padding: 20px;
