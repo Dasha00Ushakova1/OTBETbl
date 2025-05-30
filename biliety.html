@@ -80,32 +80,32 @@
             box-shadow: 0 3px 6px rgba(74, 1, 7, 0.5);
         }
 
-    .questions {
-      padding: 20px;
-      border: 1px solid #ccc;
-      border-radius: 10px;
-      background-color: #fff;
-      max-width: 700px;
-      width: 100%;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-      min-height: 150px;
-      font-size: 16px;
-      line-height: 1.5;
-      display: none;
-    }
+  .questions {
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            background-color: #fff;
+            max-width: 700px;
+            width: 100%;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            min-height: 150px;
+            font-size: 16px;
+            line-height: 1.5;
+            display: none;
+        }
 
-    /* Адаптив для мобильных */
-    @media (max-width: 480px) {
-      .button-container {
-        grid-template-columns: 1fr;
-        gap: 12px 0;
-      }
+        /* Адаптив для мобильных */
+        @media (max-width: 480px) {
+            .button-container {
+                grid-template-columns: repeat(2, 1fr); /* Изменено на два столбца */
+                gap: 12px 0;
+            }
 
-      button.button {
-        font-size: 18px;
-        padding: 16px 20px;
-      }
-    }
+            button.button {
+                font-size: 18px;
+                padding: 16px 20px;
+            }
+        }
   </style>
 </head>
 <body>
